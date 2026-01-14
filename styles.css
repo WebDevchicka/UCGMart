@@ -20,8 +20,7 @@ body {
 .navbar {
   display: flex;
   justify-content: center; /* Centers items horizontally */
-  align-items: center;     /* Centers items vertically */
-  justify-content: space-between;
+  align-items: center; /* Centers items vertically */
   padding: 15px 0;
   gap: 20px; /* Adds space between the navbar options */
   background: #333;
@@ -31,7 +30,6 @@ body {
 .navbar a {
   color: white;
   margin-right: 15px;
-  text-decoration: none;
 }
 
 .cart-icon span {
