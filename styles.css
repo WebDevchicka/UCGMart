@@ -19,8 +19,8 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;     /* Centers items vertically */
   justify-content: space-between;
   padding: 15px 0;
   background: #333;
