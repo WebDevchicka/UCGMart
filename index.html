@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Project Info</a>
+  </div>
+
+  <div class="nav-right">
+    <button id="themeToggle">🌙</button>
+    <a href="cart.html" class="cart-icon">
+      🛒 <span id="cartCount">0</span>
+    </a>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="grid">
+    <!-- 12 items -->
+    <script>
+      for (let i = 1; i <= 12; i++) {
+        document.write(`
+          <div class="card">
+            <img src="images/item${i}.jpg" alt="Item ${i}">
+            <h3>Item ${i}</h3>
+            <p>$10.00</p>
+            <div class="quantity">
+              <button onclick="changeQty(${i}, -1)">-</button>
+              <span id="qty-${i}">1</span>
+              <button onclick="changeQty(${i}, 1)">+</button>
+            </div>
+            <button class="add-btn" onclick="addToCart(${i})">Add to Cart</button>
+          </div>
+        `);
+      }
+    </script>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
